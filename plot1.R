@@ -1,5 +1,6 @@
 # plot1.R  6/18/2016  Charles Wylie
 # Coursera Exploratory Data Analysis: Course Project 1
+# https://github.com/cwylie3737/Coursera-Exploratory-Data-Analysis-Project-1
 
 # Set working directory and clean up work environment:
 setwd("C:/Users/Chuck/Documents/R/coursera/Module 4 - Exploratory Data Analysis/Week 1")
