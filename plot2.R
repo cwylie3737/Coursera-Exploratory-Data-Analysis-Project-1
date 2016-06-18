@@ -6,7 +6,17 @@
 setwd("C:/Users/Chuck/Documents/R/coursera/Module 4 - Exploratory Data Analysis/Week 1")
 rm(list=ls())
 
-# Read data file, extract two days data, extract field "Global_active_power", convert the dates from char
+# Download and unzip the raw data files if they do not exist in working directory:
+if (!file.exists("household_power_consumption.txt")) {
+    download.file(
+        "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
+        method='curl',
+        destfile="exdata_data_household_power_consumption.zip"
+    )
+    unzip("exdata_data_household_power_consumption.zip")
+}
+
+# Read data file, extract two days data, extract field "Global_active_power", convert the dates from character
 HPC <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?", stringsAsFactors=FALSE, dec=".")
 HPC <- HPC[HPC$Date %in% c("1/2/2007","2/2/2007") ,]
 GAP <- HPC$Global_active_power
