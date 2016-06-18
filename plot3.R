@@ -1,4 +1,4 @@
-# plot2.R  6/18/2016  Charles Wylie
+# plot3.R  6/18/2016  Charles Wylie
 # Coursera Exploratory Data Analysis: Course Project 1
 # https://github.com/cwylie3737/Coursera-Exploratory-Data-Analysis-Project-1
 
